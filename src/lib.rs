@@ -12,6 +12,9 @@
 //
 //  0. You just DO WHAT THE FUCK YOU WANT TO.
 
+#[cfg(feature = "offload")]
+mod offload;
+
 mod error;
 pub use crate::error::{BoxError, Error, Result};
 
